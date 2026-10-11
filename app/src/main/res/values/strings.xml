@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="wallet_title">Dompet FinTech &amp; PPOB</string>
+    <string name="balance_rupiah_label">Saldo Rupiah</string>
+    <string name="balance_crypto_label">Saldo USDT</string>
+    <string name="menu_pulsa">Pulsa</string>
+    <string name="menu_token_pln">Token PLN</string>
+    <string name="menu_tagihan">Tagihan PPOB</string>
+    <string name="menu_beli_crypto">Beli Stablecoin</string>
+    <string name="action_topup">Top Up</string>
+    <string name="action_withdraw">Tarik</string>
+    <string name="action_send">Kirim</string>
+    <string name="action_history">Riwayat</string>
+    <string name="recent_transactions">Transaksi Terbaru</string>
+    <string name="see_all">Lihat Semua</string>
+    <string name="buy_stablecoin_title">Beli Stablecoin</string>
+    <string name="exchange_rate_label">Kurs Live: 1 USDT = Rp 16.250</string>
+    <string name="input_rupiah_label">Nominal Pembelian (IDR)</string>
+    <string name="select_network_label">Pilih Jaringan Blockchain</string>
+    <string name="wallet_address_label">Alamat Wallet Tujuan</string>
+    <string name="wallet_address_hint">Masukkan atau tempel alamat wallet</string>
+    <string name="btn_continue_purchase">Lanjutkan Pembelian</string>
+    <string name="purchase_summary_title">Ringkasan Transaksi</string>
+</resources>

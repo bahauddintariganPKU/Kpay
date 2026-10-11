@@ -1,0 +1,6 @@
+{
+  "name": "My Application",
+  "description": "A Jetpack Compose Android application configured to match Android Studio project structure.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
