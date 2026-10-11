@@ -24,7 +24,7 @@ object AppIcons {
             viewportWidth = 24f,
             viewportHeight = 24f
         ).apply {
-            path(fill = SolidColor(Color.White)) {
+            path(fill = SolidColor(Color.Black)) {
                 moveTo(17f, 1.01f)
                 lineTo(7f, 1f)
                 curveTo(5.9f, 1f, 5f, 1.9f, 5f, 3f)
@@ -54,7 +54,7 @@ object AppIcons {
             viewportWidth = 24f,
             viewportHeight = 24f
         ).apply {
-            path(fill = SolidColor(Color.White)) {
+            path(fill = SolidColor(Color.Black)) {
                 moveTo(11f, 21f)
                 horizontalLineToRelative(-1f)
                 lineToRelative(1f, -7f)
@@ -82,7 +82,7 @@ object AppIcons {
             viewportWidth = 24f,
             viewportHeight = 24f
         ).apply {
-            path(fill = SolidColor(Color.White)) {
+            path(fill = SolidColor(Color.Black)) {
                 moveTo(18f, 17f)
                 horizontalLineTo(6f)
                 verticalLineToRelative(-2f)
@@ -142,7 +142,7 @@ object AppIcons {
             viewportWidth = 24f,
             viewportHeight = 24f
         ).apply {
-            path(fill = SolidColor(Color.White)) {
+            path(fill = SolidColor(Color.Black)) {
                 moveTo(12f, 2f)
                 curveTo(6.48f, 2f, 2f, 6.48f, 2f, 12f)
                 reflectiveCurveToRelative(4.48f, 10f, 10f, 10f)
@@ -170,6 +170,239 @@ object AppIcons {
                 curveToRelative(2.4f, 0.3f, 3.9f, 1f, 3.9f, 2.2f)
                 curveToRelative(0f, 1.1f, -1.4f, 1.9f, -3.4f, 2.1f)
                 verticalLineToRelative(1.5f)
+                close()
+            }
+        }.build()
+    }
+
+    // --- Bottom Navigation Icons ---
+
+    // 1. Home / Beranda
+    val NavHome: ImageVector by lazy {
+        ImageVector.Builder(
+            name = "NavHome",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(fill = SolidColor(Color.Black)) {
+                moveTo(10f, 20f)
+                verticalLineToRelative(-6f)
+                horizontalLineToRelative(4f)
+                verticalLineToRelative(6f)
+                horizontalLineToRelative(5f)
+                verticalLineToRelative(-8f)
+                horizontalLineToRelative(3f)
+                lineTo(12f, 3f)
+                lineTo(2f, 12f)
+                horizontalLineToRelative(3f)
+                verticalLineToRelative(8f)
+                close()
+            }
+        }.build()
+    }
+
+    // 2. Dompet / Wallet
+    val NavWallet: ImageVector by lazy {
+        ImageVector.Builder(
+            name = "NavWallet",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(fill = SolidColor(Color.Black)) {
+                moveTo(21f, 18f)
+                verticalLineToRelative(1f)
+                curveToRelative(0f, 1.1f, -0.9f, 2f, -2f, 2f)
+                horizontalLineTo(5f)
+                curveToRelative(-1.11f, 0f, -2f, -0.9f, -2f, -2f)
+                verticalLineTo(5f)
+                curveToRelative(0f, -1.1f, 0.89f, -2f, 2f, -2f)
+                horizontalLineToRelative(14f)
+                curveToRelative(1.1f, 0f, 2f, 0.9f, 2f, 2f)
+                verticalLineToRelative(1f)
+                horizontalLineToRelative(-9f)
+                curveToRelative(-1.11f, 0f, -2f, 0.9f, -2f, 2f)
+                verticalLineToRelative(8f)
+                curveToRelative(0f, 1.1f, 0.89f, 2f, 2f, 2f)
+                horizontalLineToRelative(9f)
+                close()
+                moveTo(12f, 16f)
+                horizontalLineToRelative(10f)
+                verticalLineTo(8f)
+                horizontalLineTo(12f)
+                verticalLineToRelative(8f)
+                close()
+                moveTo(16f, 13.5f)
+                curveToRelative(-0.83f, 0f, -1.5f, -0.67f, -1.5f, -1.5f)
+                reflectiveCurveToRelative(0.67f, -1.5f, 1.5f, -1.5f)
+                reflectiveCurveToRelative(1.5f, 0.67f, 1.5f, 1.5f)
+                reflectiveCurveToRelative(-0.67f, 1.5f, -1.5f, 1.5f)
+                close()
+            }
+        }.build()
+    }
+
+    // 3. QRIS (Scan QR with corners and center QR dots)
+    val NavQris: ImageVector by lazy {
+        ImageVector.Builder(
+            name = "NavQris",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            // Top-left bracket
+            path(fill = SolidColor(Color.White)) {
+                moveTo(3f, 9f)
+                verticalLineTo(5f)
+                curveToRelative(0f, -1.1f, 0.9f, -2f, 2f, -2f)
+                horizontalLineToRelative(4f)
+                verticalLineToRelative(2f)
+                horizontalLineTo(5f)
+                verticalLineToRelative(4f)
+                horizontalLineTo(3f)
+                close()
+            }
+            // Top-right bracket
+            path(fill = SolidColor(Color.White)) {
+                moveTo(15f, 3f)
+                horizontalLineToRelative(4f)
+                curveToRelative(1.1f, 0f, 2f, 0.9f, 2f, 2f)
+                verticalLineToRelative(4f)
+                horizontalLineToRelative(-2f)
+                verticalLineTo(5f)
+                horizontalLineToRelative(-4f)
+                verticalLineTo(3f)
+                close()
+            }
+            // Bottom-left bracket
+            path(fill = SolidColor(Color.White)) {
+                moveTo(3f, 15f)
+                horizontalLineToRelative(2f)
+                verticalLineToRelative(4f)
+                horizontalLineToRelative(4f)
+                verticalLineToRelative(2f)
+                horizontalLineTo(5f)
+                curveToRelative(-1.1f, 0f, -2f, -0.9f, -2f, -2f)
+                verticalLineToRelative(-4f)
+                close()
+            }
+            // Bottom-right bracket
+            path(fill = SolidColor(Color.White)) {
+                moveTo(19f, 15f)
+                horizontalLineToRelative(2f)
+                verticalLineToRelative(4f)
+                curveToRelative(0f, 1.1f, -0.9f, 2f, -2f, 2f)
+                horizontalLineToRelative(-4f)
+                verticalLineToRelative(-2f)
+                horizontalLineToRelative(4f)
+                verticalLineToRelative(-4f)
+                close()
+            }
+            // Center QR code blocks
+            path(fill = SolidColor(Color.White)) {
+                // Top-left square
+                moveTo(7f, 7f)
+                horizontalLineToRelative(3.5f)
+                verticalLineToRelative(3.5f)
+                horizontalLineTo(7f)
+                close()
+                // Top-right square
+                moveTo(13.5f, 7f)
+                horizontalLineTo(17f)
+                verticalLineToRelative(3.5f)
+                horizontalLineToRelative(-3.5f)
+                close()
+                // Bottom-left square
+                moveTo(7f, 13.5f)
+                horizontalLineToRelative(3.5f)
+                verticalLineTo(17f)
+                horizontalLineTo(7f)
+                close()
+                // Center point
+                moveTo(13.5f, 13.5f)
+                horizontalLineToRelative(3.5f)
+                verticalLineTo(17f)
+                horizontalLineToRelative(-3.5f)
+                close()
+            }
+        }.build()
+    }
+
+    // 4. Transaksi (Opposite horizontal arrows inside circle)
+    val NavTransactions: ImageVector by lazy {
+        ImageVector.Builder(
+            name = "NavTransactions",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            // Outer circle
+            path(fill = SolidColor(Color.Black)) {
+                moveTo(12f, 2f)
+                curveTo(6.48f, 2f, 2f, 6.48f, 2f, 12f)
+                reflectiveCurveToRelative(4.48f, 10f, 10f, 10f)
+                reflectiveCurveToRelative(10f, -4.48f, 10f, -10f)
+                reflectiveCurveTo(17.52f, 2f, 12f, 2f)
+                close()
+                moveTo(12f, 20f)
+                curveToRelative(-4.41f, 0f, -8f, -3.59f, -8f, -8f)
+                reflectiveCurveToRelative(3.59f, -8f, 8f, -8f)
+                reflectiveCurveToRelative(8f, 3.59f, 8f, 8f)
+                reflectiveCurveToRelative(-3.59f, 8f, -8f, 8f)
+                close()
+            }
+            // Top arrow right
+            path(fill = SolidColor(Color.Black)) {
+                moveTo(15.5f, 9.5f)
+                lineToRelative(-3f, -3f)
+                verticalLineToRelative(2f)
+                horizontalLineTo(7.5f)
+                verticalLineToRelative(2f)
+                horizontalLineToRelative(5f)
+                verticalLineToRelative(2f)
+                close()
+            }
+            // Bottom arrow left
+            path(fill = SolidColor(Color.Black)) {
+                moveTo(8.5f, 14.5f)
+                lineToRelative(3f, 3f)
+                verticalLineToRelative(-2f)
+                horizontalLineToRelative(5f)
+                verticalLineToRelative(-2f)
+                horizontalLineToRelative(-5f)
+                verticalLineToRelative(-2f)
+                close()
+            }
+        }.build()
+    }
+
+    // 5. Saya / Profile
+    val NavProfile: ImageVector by lazy {
+        ImageVector.Builder(
+            name = "NavProfile",
+            defaultWidth = 24.dp,
+            defaultHeight = 24.dp,
+            viewportWidth = 24f,
+            viewportHeight = 24f
+        ).apply {
+            path(fill = SolidColor(Color.Black)) {
+                moveTo(12f, 12f)
+                curveToRelative(2.21f, 0f, 4f, -1.79f, 4f, -4f)
+                reflectiveCurveToRelative(-1.79f, -4f, -4f, -4f)
+                reflectiveCurveToRelative(-4f, 1.79f, -4f, 4f)
+                reflectiveCurveToRelative(1.79f, 4f, 4f, 4f)
+                close()
+                moveTo(12f, 14f)
+                curveToRelative(-2.67f, 0f, -8f, 1.34f, -8f, 4f)
+                verticalLineToRelative(2f)
+                horizontalLineToRelative(16f)
+                verticalLineToRelative(-2f)
+                curveToRelative(0f, -2.66f, -5.33f, -4f, -8f, -4f)
                 close()
             }
         }.build()
